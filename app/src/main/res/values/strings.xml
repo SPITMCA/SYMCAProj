@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Digital Diary</string>
+    <string name="title_activity_home">MainActivity</string>
+    <string name="title_image_labelling">Label Image</string>
+    <string name="title_search">Search</string>
+    <string name="title_profile">Profile</string>
+    <string name="enter_number">Enter Phone Number</string>
+    <string name="enter_code">Enter code to verify</string>
+    <string name="enable_backup">Please enable backup from your profile section to save to cloud!</string>
+    <string name="require_permission_dialog_message">Digital Diary Requires Access to External Storage. Please grant this permission in order to use the app!!</string>
+    <string name="require_permission_dialog_title">Missing Permissions Error</string>
+    <string name="title_text_extraction">Extract Text</string>
+    <string name="title_object_detection">Object Detection</string>
+</resources>

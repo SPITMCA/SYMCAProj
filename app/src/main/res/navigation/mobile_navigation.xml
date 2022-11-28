@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_label">
+
+    <fragment
+        android:id="@+id/navigation_text_extraction"
+        android:name="com.example.digitaldiary.ui.ui.text_extraction.TextExtractionFragment"
+        android:label="@string/title_text_extraction"
+        tools:layout="@layout/text_extraction_fragment" />
+
+    <fragment
+        android:id="@+id/navigation_label"
+        android:name="com.example.digitaldiary.ui.ui.label.LabelFragment"
+        android:label="@string/title_image_labelling"
+        tools:layout="@layout/fragment_label" />
+
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.example.digitaldiary.ui.ui.search.SearchFragment"
+        android:label="@string/title_search"
+        tools:layout="@layout/fragment_search" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.digitaldiary.ui.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/navigation_object_detection"
+        android:name="com.example.digitaldiary.ui.ui.object_detection.ObjectDetectionFragment"
+        android:label="@string/title_object_detection"
+        tools:layout="@layout/object_detection_fragment" />
+</navigation>
