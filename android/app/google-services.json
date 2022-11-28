@@ -1,0 +1,105 @@
+{
+  "project_info": {
+    "project_number": "226267840076",
+    "project_id": "fluttershuk",
+    "storage_bucket": "fluttershuk.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:226267840076:android:133d2b58d9716626ac7ee9",
+        "android_client_info": {
+          "package_name": "com.example.flutter_shukran"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "226267840076-u9bdqdq791v370eakrn4d9vfvc7vm7br.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.flutter_shukran",
+            "certificate_hash": "ce221355a691e8f74d5044adbdfea8f8ceed44b4"
+          }
+        },
+        {
+          "client_id": "226267840076-120e189qh7ipdl3d76sh5i10if81s9rb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1ETQbhjuhwIj4EoFMuxH-47itNWTV4R8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "226267840076-120e189qh7ipdl3d76sh5i10if81s9rb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:226267840076:android:7226f24eea159f41ac7ee9",
+        "android_client_info": {
+          "package_name": "com.example.shukran_vendor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "226267840076-120e189qh7ipdl3d76sh5i10if81s9rb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1ETQbhjuhwIj4EoFMuxH-47itNWTV4R8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "226267840076-120e189qh7ipdl3d76sh5i10if81s9rb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:226267840076:android:2e366895c90c1c80ac7ee9",
+        "android_client_info": {
+          "package_name": "com.example.shukrann_delivery_boy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "226267840076-120e189qh7ipdl3d76sh5i10if81s9rb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1ETQbhjuhwIj4EoFMuxH-47itNWTV4R8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "226267840076-120e189qh7ipdl3d76sh5i10if81s9rb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
