@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "971770686336",
+    "firebase_url": "https://digital-diary-e7229-default-rtdb.firebaseio.com",
+    "project_id": "digital-diary-e7229",
+    "storage_bucket": "digital-diary-e7229.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:971770686336:android:4fb28beb454825a185af65",
+        "android_client_info": {
+          "package_name": "com.example.digitaldiary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "971770686336-n2kr00ur0b5dl32rfo86a6iu0rh18biq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.digitaldiary",
+            "certificate_hash": "e338f0dcbc66712453b31d02eb5c78d7c64e1e78"
+          }
+        },
+        {
+          "client_id": "971770686336-rdhplo39649tqn2blpep73g6eio5jgs6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBugVsIdDDge6PFpruUrjeRU8myLENpeXg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "971770686336-rdhplo39649tqn2blpep73g6eio5jgs6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
