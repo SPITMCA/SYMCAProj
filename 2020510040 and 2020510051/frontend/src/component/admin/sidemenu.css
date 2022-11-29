@@ -1,0 +1,36 @@
+.wrapper {
+    min-height: 100vh;
+    background-color: #42424a;
+}
+
+.linkStyleActive {
+    background-image: linear-gradient(195deg, #ec407a, #d81b60);
+}
+
+.iconStyle {
+    margin: 0 0.5em 0 0.3em;
+}
+
+.sidelink {
+    color: white;
+    margin: 0.5em 1em 0.5em 1em;
+    border-radius: 10px;
+}
+
+.sidelink:hover {
+    color: white;
+    background-color: #6c757d;
+}
+
+.sidelink.active:hover {
+    color: white;
+    margin: 0.5em 1em 0.5em 1em;
+}
+
+.logotext{
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin: 0.5em 0 0.5em 0;
+}
