@@ -1,0 +1,183 @@
+<div class="d-flex flex-column flex-shrink-0 p-3 bg-light">
+  <div class="bg">
+  <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+    <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+    <span class="fs-4">Pantry</span>
+  </a>
+  <button (click)="getSelectedIngredients()" class="btn btn-secondary">Search Recipe</button>
+  <hr>
+  <ul class="nav nav-pills flex-column mb-auto">
+    <li class="nav-item">
+      <!-- <a href="#" class="nav-link active" aria-current="page">
+        <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"/></svg>
+        Home
+      </a> -->
+      <form class="col-lg-auto mb-3 mb-lg-0">
+        <input type="text" class="form-control" [(ngModel)]="data" name="data" placeholder="Search..." aria-label="Search">
+      </form>
+    </li>
+    <li>
+      <!-- <a href="#" class="nav-link link-dark">
+        <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+        Ingredients
+      </a>  -->
+      <p *ngFor="let x of selectedIngredients">{{x}}</p>
+    </li>
+    <li>
+      <!-- <div class="row">
+        <div class="col-sm-6"> -->
+          <div class="card mt-2">
+            <div class="card-body">
+              <h5 class="card-title">Vegetables & Greens</h5>
+              <p class="card-text">{{selectedVegies.length}}/{{vegies.length}} Ingredients</p>
+              <!-- <p *ngFor="let x of selectedVegies">{{x}}</p> -->
+              <span class="gap-3">
+                <button *ngFor="let veggy of vegies | slice:0:(more1 ? undefined : 6) | filter:data" (click)="vegiesClick(veggy)" aria-pressed="true" class="btn tags-mini-item-desktop active btn-success">{{veggy}}</button>
+              </span>
+              <a (click)="more1 = !more1"><i class="fa-solid fa-angles-{{ more1 ? 'left  ':'right' }}"></i></a>
+              
+            </div>
+          </div>
+        <!-- </div>
+        <div class="col-sm-6"> -->
+          <div class="card mt-2">
+            <div class="card-body">
+              <h5 class="card-title">Herbs & Spices</h5>
+              <p class="card-text">{{selectedHerbs.length}}/{{herbs.length}} Ingredients</p>
+              <!-- <p *ngFor="let x of selectedHerbs">{{x}}</p> -->
+              <span class="gap-3">
+                <button *ngFor="let herb of herbs | slice:0:(more2 ? undefined : 6) | filter:data" (click)="herbsClick(herb)" [ngClass]="{'tags-mini-item-desktop': toggle, 'selected-tag': !toggle}"  aria-pressed="true" class="btn tags-mini-item-desktop active btn-outline-success">{{herb}}</button>
+              </span>
+              <a (click)="more2 = !more2"><i class="fa-solid fa-angles-{{ more2 ? 'left  ':'right' }}"></i></a>
+            </div>
+          </div>
+
+          <div class="card mt-2">
+            <div class="card-body">
+              <h5 class="card-title">Dairy-Free & Meat Substitutes</h5>
+              <p class="card-text">{{selectedHerbs.length}}/{{substitues.length}} Ingredients</p>
+              <!-- <p *ngFor="let x of selectedHerbs">{{x}}</p> -->
+              <span class="gap-3">
+                <button *ngFor="let substitue of substitues | slice:0:(more3 ? undefined : 6) | filter:data" (click)="herbsClick(substitue)" [ngClass]="{'tags-mini-item-desktop': toggle, 'selected-tag': !toggle}" class="btn tags-mini-item-desktopactive btn-success">{{substitue}}</button>
+              </span>
+              <a (click)="more3 = !more3"><i class="fa-solid fa-angles-{{ more3 ? 'left  ':'right' }}"></i></a>
+            </div>
+          </div>
+
+          <div class="card mt-2">
+            <div class="card-body">
+              <h5 class="card-title">Dairy & Eggs</h5>
+              <p class="card-text">{{selectedHerbs.length}}/{{dairies.length}} Ingredients</p>
+              <!-- <p *ngFor="let x of selectedHerbs">{{x}}</p> -->
+              <span class="gap-3">
+                <button *ngFor="let dairy of dairies | slice:0:(more4 ? undefined : 6) | filter:data" (click)="herbsClick(dairy)" [ngClass]="{'tags-mini-item-desktop': toggle, 'selected-tag': !toggle}" class="btn tags-mini-item-desktop active btn-success">{{dairy}}</button>
+              </span>
+              <a (click)="more4 = !more4"><i class="fa-solid fa-angles-{{ more4 ? 'left  ':'right' }}"></i></a>
+            </div>
+          </div>
+
+          <div class="card mt-2">
+            <div class="card-body">
+              <h5 class="card-title">Baking</h5>
+              <p class="card-text">{{selectedHerbs.length}}/{{bakings.length}} Ingredients</p>
+              <!-- <p *ngFor="let x of selectedHerbs">{{x}}</p> -->
+              <span class="gap-3">
+                <button *ngFor="let baking of bakings | slice:0:(more5 ? undefined : 6) | filter:data" (click)="herbsClick(baking)" [ngClass]="{'tags-mini-item-desktop': toggle, 'selected-tag': !toggle}" class="btn tags-mini-item-desktop active btn-success">{{baking}}</button>
+              </span>
+              <a (click)="more5 = !more5"><i class="fa-solid fa-angles-{{ more5 ? 'left  ':'right' }}"></i></a>
+            </div>
+          </div>
+
+          <div class="card mt-2">
+            <div class="card-body">
+              <h5 class="card-title">Sugar & Sweeteners</h5>
+              <p class="card-text">{{selectedHerbs.length}}/{{sugars.length}} Ingredients</p>
+              <!-- <p *ngFor="let x of selectedHerbs">{{x}}</p> -->
+              <span class="gap-3">
+                <button *ngFor="let sugar of sugars | slice:0:(more6 ? undefined : 6) | filter:data" (click)="herbsClick(sugar)" [ngClass]="{'tags-mini-item-desktop': toggle, 'selected-tag': !toggle}" class="btn tags-mini-item-desktop active btn-success">{{sugar}}</button>
+              </span>
+              <a (click)="more6 = !more6"><i class="fa-solid fa-angles-{{ more6 ? 'left  ':'right' }}"></i></a>
+            </div>
+          </div>
+
+          <div class="card mt-2">
+            <div class="card-body">
+              <h5 class="card-title">Fruits & Berries</h5>
+              <p class="card-text">{{selectedHerbs.length}}/{{fruits.length}} Ingredients</p>
+              <!-- <p *ngFor="let x of selectedHerbs">{{x}}</p> -->
+              <span class="gap-3">
+                <button *ngFor="let fruit of fruits | slice:0:(more7 ? undefined : 6) | filter:data" (click)="herbsClick(fruit)" [ngClass]="{'tags-mini-item-desktop': toggle, 'selected-tag': !toggle}" class="btn tags-mini-item-desktop active btn-success">{{fruit}}</button>
+              </span>
+              <a (click)="more7 = !more7"><i class="fa-solid fa-angles-{{ more7 ? 'left  ':'right' }}"></i></a>
+            </div>
+          </div>
+
+          <div class="card mt-2">
+            <div class="card-body">
+              <h5 class="card-title">Oils & Fats</h5>
+              <p class="card-text">{{selectedHerbs.length}}/{{herbs.length}} Ingredients</p>
+              <!-- <p *ngFor="let x of selectedHerbs">{{x}}</p> -->
+              <span class="gap-3">
+                <button *ngFor="let oil of oils | slice:0:(more8 ? undefined : 6) | filter:data" (click)="herbsClick(oil)" [ngClass]="{'tags-mini-item-desktop': toggle, 'selected-tag': !toggle}" class="btn tags-mini-item-desktop active btn-success">{{oil}}</button>
+              </span>
+              <a (click)="more8 = !more8"><i class="fa-solid fa-angles-{{ more8 ? 'left  ':'right' }}"></i></a>
+            </div>
+          </div>
+        <!-- </div>
+      </div> -->
+      <div class="card mt-2">
+        <div class="card-body">
+          <h5 class="card-title">Recipes</h5>
+          <ul class="dropdown-menu text- small shadow">
+            <!-- <li *ngFor="let x of recipes"><a class="dropdown-item" >{{x.recipe_name}}</a></li> -->
+          </ul>
+          <!-- <div class="dx-field">
+            <div class="dx-field-label">DropDownBox with embedded DataGrid</div>
+            <div class="dx-field-value">
+                <dx-drop-down-box
+                        [(value)]="gridBoxValue"
+                        valueExpr="ID"
+                        displayExpr="CompanyName"
+                        placeholder="Select a value..."
+                        [showClearButton]="true"
+                        [dataSource]="gridDataSource"
+                        (onValueChanged)="ValueChange($event)"
+                >
+        
+                    <div *dxTemplate="let data of 'content'">
+                        <dx-data-grid
+                                [dataSource]="gridDataSource"
+                                [columns]="['CompanyName']"
+                                [selection]="{ mode: 'multiple' }"
+                                [hoverStateEnabled]="true"
+                                [paging]="{ enabled: true, pageSize: 10 }"
+                                [filterRow]="{ visible: true }"
+                                [scrolling]="{ mode: 'infinite' }"
+                                [height]="345"
+                                [(selectedRowKeys)]="gridBoxValue"
+                        >
+                        </dx-data-grid>
+                    </div>
+                </dx-drop-down-box>
+            </div>
+        </div>  -->
+        </div>
+      </div>
+    </li>
+  </ul>
+  <hr>
+  <div class="dropdown">
+    <!-- <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+      <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+      <strong>mdo</strong>
+    </a> -->
+    <!-- <ul class="dropdown-menu text- small shadow" aria-labelledby="dropdownUser2">
+      <li><a class="dropdown-item" href="#">New project...</a></li>
+      <li><a class="dropdown-item" href="#">Settings</a></li>
+      <li><a class="dropdown-item" href="#">Profile</a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="#">Sign out</a></li>
+    </ul> -->
+  </div>
+  </div>
+</div>

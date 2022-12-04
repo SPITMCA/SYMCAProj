@@ -1,0 +1,37 @@
+[{
+  "_id": {
+    "$oid": "62508c026e87ab5194329137"
+  },
+  "category": "Vegetables and greens",
+  "ingredients": [
+    "garlic",
+    "onion",
+    "tomato",
+    "carrot",
+    "potato",
+    "mashroom",
+    "spinach",
+    "pumpkin",
+    "cabbage",
+    "lattuce",
+    "alfalfa"
+  ]
+},{
+  "_id": {
+    "$oid": "6278041fb3e4e917c36d7c5b"
+  },
+  "category": "Herbs and spices",
+  "ingredients": [
+    "cinnamon",
+    "parsley",
+    "cilantro",
+    "cumin",
+    "basil",
+    "thyme",
+    "ginger root",
+    "garlic powder",
+    "oregano",
+    "chilli flake",
+    "paprika"
+  ]
+}]

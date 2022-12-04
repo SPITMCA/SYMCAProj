@@ -1,0 +1,49 @@
+<div class="row">
+  <div class="col-sm-4 mt-2" *ngFor="let recipe of recipes">
+    <div class="card">
+      <img src="{{recipe.image}}" class="card-img-top" alt="img">
+      <div class="card-body">
+        <h5 class="card-title">{{recipe.title}}</h5>
+        
+        <div class="container px-4">
+          <div class="row gx-5">
+            <div class="col">
+             <div class="p-3 border bg-light">You have: </div>
+             <li *ngFor="let x of recipe.usedIngredients">{{x.name}}</li>
+            </div>
+            <div class="col">
+              <div class="p-3 border bg-light">You're Missing: </div>
+              <li *ngFor="let x of recipe.missedIngredients">{{x.name}}</li>
+            </div>
+          </div>
+        </div>
+        <!-- <ul><b>You have: </b> 
+          <li *ngFor="let x of recipe.usedIngredients">{{x.name}}</li>
+        </ul>
+        <ul><b>You're Missing: </b>
+          <li *ngFor="let x of recipe.missedIngredients">{{x.name}}</li>
+        </ul> -->
+        <!-- <div class="row">
+          <div class="col-md-2">
+            
+          </div>
+          <div class="col-md-2">
+            
+          </div>
+        </div> -->
+        <!-- <p class="card-text" [innerHtml]="summary"></p> -->
+        <a class="btn btn-primary" (click)="visit(recipe.id)">Visit Recipe</a>
+        <!-- <a [routerLink]="['recipe', recipe.id]" target="_blank" class="btn btn-primary">Visit Recipe</a> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="card mb-3">
+    <img src="{{img}}" class="card-img-top" alt="img">
+    <div class="card-body">
+      <h5 class="card-title">{{title}}</h5>
+      <p class="card-text" [innerHtml]="summary"></p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+</div> -->
