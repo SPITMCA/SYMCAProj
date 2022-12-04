@@ -1,0 +1,29 @@
+<div class="text-center">
+    <div class="bg-image d-flex justify-content-center align-items-center" style="background-image: url('assets/img/sign.png'); height: 100vh;">
+        <!-- <h1 class="text-white">Find Your Recipe</h1> -->
+    <div class="col-6">
+    <form [formGroup]="user" (submit)="submit()">
+        <!-- <h1 class="h3 mb-3 fw-normal">Please sign in</h1> -->
+        <img src ="../assets/img/plate.png">
+        <div class="form-floating">
+            <input type="email" class="form-control" formControlName="email" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email</label>
+        </div>
+        <div class="form-floating">
+            <input type="password" class="form-control" formControlName="password" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+        </div>
+    
+        <!-- <div class="checkbox mb-3">
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+        </div> -->
+        <button class="w-100 btn btn-secondary btn-lg btn-block" type="submit">Log in</button>
+        <!-- <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p> -->
+    </form>
+    <a class="router-link mt-3" routerLink="/register">Sign Up</a>
+</div>
+    
+    </div>
+</div>

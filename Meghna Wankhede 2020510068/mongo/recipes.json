@@ -1,0 +1,61 @@
+[{
+  "_id": {
+    "$oid": "627957d51df6ac90fc7ec1f1"
+  },
+  "cooking_method": "",
+  "cuisine": "Indian",
+  "ingredients": [
+    {
+      "ingredient_name": "haldi",
+      "quantity": "1/2 tb spoon"
+    },
+    {
+      "ingredient_name": "milk",
+      "quantity": "1 Ltr"
+    },
+    {
+      "ingredient_name": "sugar",
+      "quantity": "3 tb spoon"
+    }
+  ],
+  "prep_time": "10 mins",
+  "recipe_name": "Haldi Milk"
+},{
+  "_id": {
+    "$oid": "62795fe81df6ac90fc7ec1f9"
+  },
+  "cooking_method": "",
+  "cuisine": "Indian",
+  "ingredients": [
+    {
+      "ingredient_name": "rice",
+      "quantity": "1/2 bowl"
+    },
+    {
+      "ingredient_name": "water",
+      "quantity": "2 bowl"
+    },
+    {
+      "ingredient_name": "salt",
+      "quantity": "1 tb spoon"
+    },
+    {
+      "ingredient_name": "pepper",
+      "quantity": "1 tb spoon"
+    },
+    {
+      "ingredient_name": "haldi",
+      "quantity": "1/2 tb spoon"
+    },
+    {
+      "ingredient_name": "chilli",
+      "quantity": "3-4 medium size"
+    },
+    {
+      "ingredient_name": "biryani masala",
+      "quantity": "2 tb spoon"
+    }
+  ],
+  "prep_time": "20 mins",
+  "recipe_name": "khichdi"
+}]
