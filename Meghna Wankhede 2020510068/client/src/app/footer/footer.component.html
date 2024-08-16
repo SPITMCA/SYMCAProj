@@ -1,0 +1,22 @@
+<main class="ms-sm-auto px-md-3">
+  <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2" routerLink="/">
+      <img src ="../assets/img/plate.png">
+    </h1>
+    <div class="btn-toolbar mb-2 mb-md-0">
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+            <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+        </form>
+      <!-- <button type="button" class="btn btn-sm btn-outline-secondary"> -->
+        <!-- <span data-feather="calendar"><i class="fa-solid fa-user-check"></i><a class="btn btn-sm btn-outline-secondary" routerLink="/login"></a></span> -->
+        <a routerLink="/login" class="nav-link padding-y-xs padding-x-md" aria-label="account">
+          <i class="fa-solid fa-user"></i>
+        </a>
+        <!-- Login -->
+      <!-- </button> -->
+    </div>
+  </div>
+  <div [hidden]="hideElement">
+    <img src ="../assets/img/back.jpg" height="100%" width="100%">
+  </div>
+</main>

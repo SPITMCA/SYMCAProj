@@ -1,0 +1,20 @@
+.tags-mini-item-desktop {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: rgba(181,191,200,.2);
+    color: rgba(79,80,90,.6);
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration: none;
+    cursor: default;
+}
+
+.selected-tag {
+    background-color: #93c759;
+    color: #fff;
+}
+.bg {
+    background-color: #45ba5c;
+}
